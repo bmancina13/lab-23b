@@ -1,14 +1,8 @@
 var gulp = require('gulp'),
-<<<<<<< HEAD
-	browserSync = require('browser-sync').create(),
-	stylus = require('gulp-stylus'),
-	concat = require('gulp-concat');
-=======
 		browserSync = require('browser-sync').create(),
 		stylus = require('gulp-stylus'),
 		concat = require('gulp-concat'),
 		del = require("del");
->>>>>>> e68c1bf28aed7fa0811cdd51e743cd82f6d45104
 
 gulp.task('stylus', function() {
   gulp.src('css/demostyles.styl')
@@ -25,16 +19,6 @@ gulp.task('serve', ['stylus'],function(){
 
 	gulp.watch("css/demostyles.styl", ['stylus']);
 	gulp.watch("index.html").on('change', browserSync.reload);
-<<<<<<< HEAD
-
-});
-
-gulp.task('scripts', function() {
-     gulp.src('./js/*.js')
-    .pipe(concat('all.js'))
-    .pipe(gulp.dest('./js/'));
-});
-=======
 });
 
 gulp.task('scripts', ["delete"], function() {
@@ -48,4 +32,3 @@ gulp.task("delete", function() {
 		"js/all.js"
 	]);
 });
->>>>>>> e68c1bf28aed7fa0811cdd51e743cd82f6d45104
