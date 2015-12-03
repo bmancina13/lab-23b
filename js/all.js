@@ -1,2 +1,1 @@
-console.log(8);
-console.log(12);
+!function(){var o="String Went Here.";console.log(o)}(),console.log(13);

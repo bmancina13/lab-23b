@@ -1,1 +1,6 @@
-console.log(8);
+(function() {
+  var longVariableName = "String Went Here.";
+
+  console.log(longVariableName);
+
+})();
