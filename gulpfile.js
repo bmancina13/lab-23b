@@ -25,8 +25,8 @@ gulp.task('serve', ['stylus'],function(){
 gulp.task('scripts', ["delete"], function() {
   gulp.src('js/*.js')
     .pipe(concat('all.js'))
-    .pipe(uglify({mangle:true}))
-    .pipe(gulp.dest('js'));
+	.pipe(uglify({mangle:true}))
+	.pipe(gulp.dest('js'));
 });
 
 gulp.task("delete", function() {
@@ -34,13 +34,6 @@ gulp.task("delete", function() {
 		"js/all.js"
 ]);
 
-
-//gulp.task('uglify',['scripts'] function() {
-  //return gulp.src('js/*.js')
-    //.pipe(uglify())
-    //.pipe(uglify(({mangle:true}))
-    //.pipe(gulp.dest('js'));
-//});
 
 });
 
