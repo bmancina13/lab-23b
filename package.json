@@ -14,7 +14,10 @@
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-git": "^1.6.0",
+<<<<<<< HEAD
     "gulp-livereload": "^3.8.1",
+=======
+>>>>>>> e68c1bf28aed7fa0811cdd51e743cd82f6d45104
     "gulp-stylus": "^2.1.0"
   },
   "dependencies": {
