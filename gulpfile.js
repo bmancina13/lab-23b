@@ -40,8 +40,8 @@ gulp.task('add', function(){
 });
 
 gulp.task('commit', function(){
-  gulp.src('.')
-  .pipe(git.commit('initial commit'));
+	gulp.src('.')
+	.pipe(git.commit('initial commit'));
 });
 
 gulp.task('push', function(){
